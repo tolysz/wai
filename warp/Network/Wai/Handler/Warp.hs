@@ -29,6 +29,7 @@ module Network.Wai.Handler.Warp (
   , settingsPort
   , settingsHost
   , settingsOnException
+  , settingsOnExceptionResponse
   , settingsOnOpen
   , settingsOnClose
   , settingsTimeout
@@ -36,6 +37,8 @@ module Network.Wai.Handler.Warp (
   , settingsManager
   , settingsFdCacheDuration
   , settingsBeforeMainLoop
+    -- ** Debugging
+  , exceptionResponseForDebug
     -- * Data types
   , HostPreference (..)
   , Port
